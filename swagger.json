@@ -1,14 +1,15 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Users Api",
-    "description": "Users Api",
+    "title": "Contacts Api",
+    "description": "Contacts Api",
     "version": "1.0.0"
   },
-  "host": "project1-8xqo.onrender.com",
+  "host": "https://project1-8xqo.onrender.com",
   "basePath": "/",
   "schemes": [
-    "https"
+    "https",
+    "http"
   ],
   "paths": {
     "/": {
@@ -24,7 +25,17 @@
         }
       }
     },
-    "/users/": {
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/contacts/": {
       "get": {
         "description": "",
         "produces": [
@@ -74,7 +85,7 @@
         }
       }
     },
-    "/users/{id}": {
+    "/contacts/{id}": {
       "get": {
         "description": "",
         "produces": [
