@@ -22,7 +22,9 @@
     "express": "^4.21.1",
     "install": "^0.13.0",
     "mongodb": "^6.10.0",
-    "swagger-autogen": "^2.23.7",
     "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "swagger-autogen": "^2.23.7"
   }
 }
