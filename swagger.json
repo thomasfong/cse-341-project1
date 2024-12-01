@@ -2,10 +2,10 @@
   "swagger": "2.0",
   "info": {
     "title": "Users Api",
-    "description": "Users Api",
+    "description": "Contacts Api",
     "version": "1.0.0"
   },
-  "host": "project1-8xqo.onrender.com",
+  "host": "localhost:3000",
   "basePath": "/",
   "schemes": [
     "https"
@@ -24,7 +24,17 @@
         }
       }
     },
-    "/users/": {
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/contacts/": {
       "get": {
         "description": "",
         "produces": [
@@ -65,8 +75,8 @@
           }
         ],
         "responses": {
-          "204": {
-            "description": "No Content"
+          "201": {
+            "description": "Created"
           },
           "500": {
             "description": "Internal Server Error"
@@ -74,7 +84,7 @@
         }
       }
     },
-    "/users/{id}": {
+    "/contacts/{id}": {
       "get": {
         "description": "",
         "produces": [
