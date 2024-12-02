@@ -1,14 +1,14 @@
 // LOCALHOST
 ### Get all contacts
-GET http://localhost:3000/contacts
+GET http://localhost:3001/contacts
 
 
 ### Get contact by id
-GET http://localhost:3000/contacts/622023f642f9ab4cd6e060b3
+GET http://localhost:3001/contacts/622023f642f9ab4cd6e060b3
 
 
 ### Create contact
-POST http://localhost:3000/contacts HTTP/1.1
+POST http://localhost:3001/contacts HTTP/1.1
 content-type: application/json
 
 {
@@ -20,7 +20,7 @@ content-type: application/json
 }
 
 ### PUT contact
-PUT http://localhost:3000/users/672f689120130c10661425a8 HTTP/1.1
+PUT http://localhost:3001/users/672f689120130c10661425a8 HTTP/1.1
 
 {
     "firstName": "Rain",
@@ -31,4 +31,4 @@ PUT http://localhost:3000/users/672f689120130c10661425a8 HTTP/1.1
 }
 
 ### DELETE contact
-DELETE http://localhost:3000/users/672f689120130c10661425a8 HTTP/1.1
+DELETE http://localhost:3001/users/672f689120130c10661425a8 HTTP/1.1
