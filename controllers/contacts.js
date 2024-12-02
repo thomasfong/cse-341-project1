@@ -29,7 +29,7 @@ const createContact = async (req, res) => {
         favoriteColor:req.body.favoriteColor,
         birthday: req.body.birthday
     };
-    const response = await mongodb.getDatabase().db().collection('contacts').replaceOne(contact);
+    const response = await mongodb.getDatabase().db().collection('contacts').insertOne(contact);
         if (response.acknowledged > 0) {
         res.status(204).send();
     } else {
