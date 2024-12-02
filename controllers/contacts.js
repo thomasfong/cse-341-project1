@@ -22,7 +22,7 @@ const getSingle = async(req, res) => {
 
 const createContact = async (req, res) => {
     // swagger.tads=['Contacts']
-    const user = {
+    const contact = {
         firstName: req.body.firstName,
         lastName: req.body.lastName,
         email: req.body.email,
@@ -40,7 +40,7 @@ const createContact = async (req, res) => {
 const updateContact = async (req, res) => {
     // swagger.tads=['Contacts']
     const userId = new ObjectId(req.params.id);
-    const user = {
+    const contact = {
         username: req.body.username,
         email: req.body.email,
         name: req.body.name,
