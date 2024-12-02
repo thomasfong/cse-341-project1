@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongodb = require('./data/database');
+const passport = require("passport");
 const app = express();
 
 const port = process.env.PORT || 3001;
@@ -16,6 +17,18 @@ app.use((req, res, next) => {
     next();
 });
 app.use('/', require('./routes'));
+
+app.get(
+    "/github/callback",
+    passport.authenticate("github", {
+      failureRedirect: "/api-docs",
+      session: false,
+    }),
+    (req, res) => {
+      req.session.user = req.user;
+      res.redirect("/");
+    }
+  );
 
 mongodb.initDb((err) => {
     if(err) {

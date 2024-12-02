@@ -7,7 +7,6 @@
     "swagger": "node swagger.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thomasfong/cse-341-project1.git"
@@ -24,6 +23,7 @@
     "express": "^4.21.1",
     "install": "^0.13.0",
     "mongodb": "^6.10.0",
+    "passport": "^0.7.0",
     "swagger-ui-express": "^5.0.1"
   },
   "devDependencies": {
