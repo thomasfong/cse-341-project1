@@ -4,8 +4,10 @@
   "description": "My Frist project",
   "main": "server.js",
   "scripts": {
+    "swagger": "node swagger.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thomasfong/cse-341-project1.git"
