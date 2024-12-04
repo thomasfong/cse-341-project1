@@ -47,7 +47,7 @@
         }
       },
       "post": {
-        "description": "Create a contact in the database, every field is required. The contacted ID number is automatically assigned by the database after submition.  Any field that is ommitted will be set to \"NULL\"",
+        "description": "",
         "parameters": [
           {
             "name": "body",
@@ -89,7 +89,7 @@
     },
     "/contacts/{id}": {
       "get": {
-        "description": "Returns a contact from the database using the contacts ID number",
+        "description": "",
         "produces": [
           "application/json"
         ],
@@ -111,7 +111,7 @@
         }
       },
       "put": {
-        "description": "Update a contacts information using the contacts ID number.The contacted ID number is automatically assigned by the database after submition.  Any field that is ommitted will be set to \"NULL\"",
+        "description": "",
         "parameters": [
           {
             "name": "id",
@@ -160,7 +160,7 @@
         }
       },
       "delete": {
-        "description": "Delete a contact from the database using the contacts ID number.",
+        "description": "",
         "parameters": [
           {
             "name": "id",

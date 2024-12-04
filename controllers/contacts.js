@@ -25,9 +25,7 @@ const getAll = (req, res) => {
 
 const getSingle = (req, res) => {
   // swagger.tags=['contacts']
-  /*
-    #swagger.description = 'Returns a contact from the database using the contacts ID number';
-    */
+
     if (!ObjectId.isValid(req.params.id)) {
       res.status(400).json('Must use a valid contact id to find a contact.');
     }
@@ -48,10 +46,7 @@ const getSingle = (req, res) => {
 
 const createContact = async (req, res) => {
   // swagger.tags=['contacts']
-  /*
-    #swagger.description = 'Create a contact in the database, every field is required. The contacted ID number is automatically assigned by the database after submition.
-     Any field that is ommitted will be set to "NULL"';
-    */
+
      const contact = {
       firstName: req.body.firstName,
       lastName: req.body.lastName,
@@ -69,15 +64,12 @@ const createContact = async (req, res) => {
 
 const updateContact = async (req, res) => {
   // swagger.tags=['contacts']
-  /*
-    #swagger.description = 'Update a contacts information using the contacts ID number.The contacted ID number is automatically assigned by the database after submition.
-    Any field that is ommitted will be set to "NULL"';
-    */
+  
     if (!ObjectId.isValid(req.params.id)) {
       res.status(400).json('Must use a valid contact id to update a contact.');
     }
     const userId = new ObjectId(req.params.id);
-    // be aware of updateOne if you only want to update specific fields
+
     const contact = {
       firstName: req.body.firstName,
       lastName: req.body.lastName,
@@ -101,9 +93,7 @@ const updateContact = async (req, res) => {
 
 const deleteContact = async (req, res) => {
   // swagger.tags=['contacts']
-  /*
-    #swagger.description = 'Delete a contact from the database using the contacts ID number.';
-    */
+ 
     if (!ObjectId.isValid(req.params.id)) {
       res.status(400).json('Must use a valid contact id to delete a contact.');
     }

@@ -1,33 +1,33 @@
 // LOCALHOST
 ### Get all contacts
-GET http://localhost:3001/contacts
+GET https://project1-8xqo.onrender.com/contacts
 
 
 ### Get contact by id
-GET http://localhost:3001/contacts/674befc3260be7851607dc64
+GET https://project1-8xqo.onrender.com/contacts/674f105ba2f812dc6a701f6c
 
 
 ### Create contact
-POST http://localhost:3001/contacts HTTP/1.1
+POST https://project1-8xqo.onrender.com/contacts HTTP/1.1
 content-type: application/json
 
 {
     "firstName": "Rain",
     "lastName": "Ng",
-    "email": "test@example.com",
+    "email": "RainNg@gmail.com",
     "favoriteColor": "Yellow",
-    "birthady": "Sep"
+    "birthady": "Sep 2, 1996"
 }
 
 ### PUT contact
-PUT http://localhost:3001/contacts/674befc3260be7851607dc64 HTTP/1.1
+PUT https://project1-8xqo.onrender.com/contacts/674f10c5a2f812dc6a701f6d HTTP/1.1
 
 {
     "firstName": "Rain",
     "lastName": "Ng",
-    "email": "test@example.com",
+    "email": "RainNg@gmail.com",
     "favoriteColor": "Yellow",
-    "birthady": "Sep"
+    "birthady": "Sep 2, 1996"
 }
 
 ### DELETE contact
