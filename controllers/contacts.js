@@ -1,13 +1,11 @@
 const mongodb = require('../data/database');
-const ObjectId = require('mongodb').ObjectId ;// Id mongo assigns all database entries (primary key)
+const ObjectId = require('mongodb').ObjectId ;
 
 let err;
 
 const getAll = (req, res) => {
   // swagger.tags=['contacts']
-  /*
-    #swagger.description = 'Returns all contacts in the database.';
-    */
+
     mongodb
     .getDatabase()
     .db()

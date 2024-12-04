@@ -30,7 +30,7 @@ PUT https://project1-8xqo.onrender.com/contacts/674f0bf082c3c65ecdfe3e0a HTTP/1.
 }
 
 ### DELETE contact
-DELETE http://localhost:3001/contacts/674f0bf082c3c65ecdfe3e0a HTTP/1.1
+DELETE http://localhost:3000/contacts/674f0bf082c3c65ecdfe3e0a HTTP/1.1
 
 
 ### Get all contacts 

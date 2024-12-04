@@ -5,10 +5,10 @@
     "description": "Contacts API Part 1 and Part 2",
     "version": "1.0.0"
   },
-  "host": "project1-8xqo.onrender.com",
+  "host": "localhost:3000/",
   "basePath": "/",
   "schemes": [
-    "https"
+    "http"
   ],
   "paths": {
     "/": {
